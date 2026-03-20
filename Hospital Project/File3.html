@@ -19,6 +19,74 @@
   <link rel="stylesheet" href="./Assets/index.css">
 
   <style>
+    
+/* TOP HEADER */
+.top-header {
+  padding: 6px 0;
+  background-color: #1a1a1a;
+  font-size: 18px;
+}
+
+.top-header span {
+  font-size: 20px;
+}
+
+.top-header i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.top-header i:hover {
+  color: #ffc107;
+}
+
+/* NAVBAR */
+.custom-nav {
+  background: linear-gradient(to right, #0b132b, #0a0f1f);
+  padding: 16px 0;
+  margin-top: -1px; /* remove tiny gap */
+}
+
+/* NAV LINKS */
+.nav-link {
+  color: #cbd5e1 !important;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* BUTTON */
+.book-btn {
+  background-color: #f59e0b;
+  color: #000;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #d97706;
+  color: #fff;
+}
+
+/* NAVBAR SIDE SPACING */
+.nav-space {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-space {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 /* Navbar */
 .navbar {
@@ -393,48 +461,50 @@ body.light-mode #themeToggle {
 
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+  <div class="container-fluid nav-space">
 
     <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <i class="bi bi-scissors"></i>
-      <span class="logo-white">Barber</span>
-      <span class="logo-orange">Kraft</span>
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span style="font-size:20px;">✂️</span>
+      <span class="fw-bold text-light">Barber</span>
+      <span class="fw-bold text-warning">Kraft</span>
     </a>
 
-    <!-- Mobile toggle -->
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navMenu">
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="nav">
 
       <!-- Center Menu -->
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Barbers</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <ul class="navbar-nav mx-auto text-center gap-lg-3">
+
+        <li class="nav-item"><a class="nav-link" href="./File3.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="./File4.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="./file1.html">Barbers</a></li>
+        <li class="nav-item"><a class="nav-link" href="./file2.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="./index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+
       </ul>
 
-      <!-- Right side -->
-      <div class="d-flex align-items-center ms-auto gap-3">
+      <!-- Right Side -->
+      <div class="d-flex align-items-center gap-3">
 
-        <!-- Dark/Light Toggle -->
-        <button id="themeToggle" class="btn btn-outline-light">🌙</button>
+        <!-- Small Icon -->
+        <i class="fas fa-sun text-light"></i>
 
-        <!-- Book Now -->
-        <a href="#" class="book-btn">Book Now</a>
+        <!-- Button -->
+        <a href="#" class="btn book-btn">Book Now</a>
 
       </div>
 
     </div>
   </div>
 </nav>
-
 <!-- Theme Toggle Script -->
 <script>
 const toggleBtn = document.getElementById("themeToggle");
