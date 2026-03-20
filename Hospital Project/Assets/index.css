@@ -269,3 +269,24 @@ body {
   padding: 8px;
   border-radius: 5px;
 }
+
+/* FIX TOP HEADER */
+.top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* FIX NAVBAR BELOW HEADER */
+.custom-nav {
+  position: fixed;
+  top: 50px; /* height of top-header */
+  width: 100%;
+  z-index: 9998;
+}
+
+/* PREVENT CONTENT HIDING */
+body {
+  padding-top: 120px; /* adjust total height */
+}
