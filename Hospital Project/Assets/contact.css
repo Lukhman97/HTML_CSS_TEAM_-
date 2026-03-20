@@ -1,89 +1,23 @@
+/* ================= GLOBAL ================= */
+body {
+  background: #020617;
+  color: white;
+  padding-top: 120px;
+}
 
-  /* FIX TOP HEADER */
+/* TEXT */
+.sub-text {
+  color: #94a3b8;
+}
+
+/* ================= HEADER ================= */
 .top-header {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-}
-
-/* FIX NAVBAR BELOW HEADER */
-.custom-nav {
-  position: fixed;
-  top: 50px; /* height of top-header */
-  width: 100%;
-  z-index: 9998;
-}
-
-/* PREVENT CONTENT HIDING */
-body {
-  padding-top: 120px; /* adjust total height */
-}
-  .hero-section {
-  height: 300px;
-  background: linear-gradient(to right, #020617, #1e293b);
-  color: white;
-}
-
-.main-section {
-  background: #020617;
-}
-
-.sub-text {
-  color: #94a3b8;
-}
-
-.custom-input {
-  background: #0f172a;
-  border: 1px solid #334155;
-  color: white;
-}
-
-.custom-input::placeholder {
-  color: #64748b;
-}
-
-.book-btn {
-  background: orange;
-  color: black;
-  font-weight: bold;
-}
-
-.book-btn:hover {
-  background: #d97706;
-  color: white;
-}
-
-.contact-box {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.contact-box i {
-  background: orange;
-  color: black;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.footer {
-  background: #0f172a;
-  color: white;
-}
-
-.footer p {
-  color: #94a3b8;
-}
-  /* TOP HEADER */
-.top-header {
   padding: 6px 0;
   background-color: #1a1a1a;
-  font-size: 18px;
-}
-
-.top-header span {
-  font-size: 20px;
 }
 
 .top-header i {
@@ -96,18 +30,18 @@ body {
   color: #ffc107;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .custom-nav {
-  background: linear-gradient(to right, #0b132b, #0a0f1f);
-  padding: 16px 0;
-  margin-top: -1px; /* remove tiny gap */
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 9998;
+  background: linear-gradient(to right, #020617, #0f172a);
+  padding: 14px 0;
 }
 
-/* NAV LINKS */
 .nav-link {
   color: #cbd5e1 !important;
-  font-size: 20px;
-  transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -116,30 +50,67 @@ body {
 
 /* BUTTON */
 .book-btn {
-  background-color: #f59e0b;
-  color: #000;
+  background: #f59e0b;
+  color: black;
   font-weight: 600;
   padding: 8px 20px;
   border-radius: 6px;
-  transition: 0.3s;
 }
 
 .book-btn:hover {
-  background-color: #d97706;
-  color: #fff;
+  background: #d97706;
+  color: white;
 }
 
-/* NAVBAR SIDE SPACING */
+/* ================= HERO ================= */
+.hero-section {
+  height: 300px;
+  background: linear-gradient(to right, #020617, #1e293b);
+}
+
+/* ================= FORM ================= */
+.custom-input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: #64748b;
+}
+
+/* ================= CONTACT ================= */
+.contact-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-box i {
+  background: #f59e0b;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #0f172a;
+}
+
+.footer p {
+  color: #94a3b8;
+}
+
+/* ================= NAV SPACING ================= */
 .nav-space {
   padding-left: 150px;
   padding-right: 150px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-space {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-

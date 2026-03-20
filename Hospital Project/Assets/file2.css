@@ -111,3 +111,81 @@ body {
 }
 
     
+/* BACKGROUND SECTIONS */
+.pricing-section,
+.faq-section,
+.cta-section {
+  background: #020617;
+}
+
+/* CARD */
+.price-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+}
+
+/* ACTIVE CARD */
+.price-card.active {
+  border: 2px solid #f59e0b;
+  background: #111827;
+}
+
+/* PRICE TEXT */
+.price {
+  color: white;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+/* LIST */
+.price-card ul li {
+  margin-bottom: 8px;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.book-btn {
+  background: #f59e0b;
+  color: black;
+  font-weight: 600;
+}
+
+.book-btn:hover {
+  background: #d97706;
+  color: white;
+}
+
+/* FAQ FIX */
+.accordion-item {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background: #0f172a;
+  color: white;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #111827;
+  color: #f59e0b;
+}
+
+.accordion-body {
+  color: #94a3b8;
+}
+
+/* REMOVE WHITE BOOTSTRAP BG */
+.accordion-button::after {
+  filter: invert(1);
+}
