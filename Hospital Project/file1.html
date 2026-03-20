@@ -89,6 +89,108 @@
     padding-right: 15px;
   }
 }
+
+.hero-section {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to right, #020617, #1e293b);
+  color: white;
+}
+
+.sub-text {
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+body {
+  background: #020617;
+}
+
+/* CARD */
+.barber-card {
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 15px;
+  gap: 15px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.barber-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.barber-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CONTENT */
+.barber-content h6 {
+  color: white;
+}
+
+.role {
+  color: orange;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.desc {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* TAGS */
+.tags span {
+  background: orange;
+  color: black;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+/* EXPERIENCE */
+.exp {
+  display: block;
+  margin-top: 5px;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.book-btn {
+  background: orange;
+  color: black;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background: #d97706;
+  color: white;
+}
+
+/* FOOTER */
+.footer-section {
+  background: #0f172a;
+}
+
+.footer-section h6 {
+  margin-bottom: 15px;
+}
+
+.footer-section i {
+  background: #1e293b;
+  padding: 8px;
+  border-radius: 5px;
+}
 </style>
 
 
@@ -173,298 +275,274 @@
   </div>
 </nav>
 
-<!-- Hero Section -->
-<div class="d-flex justify-content-center align-items-center text-center"
-     style="height:300px; width:100%; background-color:darkslategray;">
+<!-- HERO SECTION -->
+<div class="hero-section d-flex justify-content-center align-items-center text-center">
+  
+  <div>
+    <h1 class="fw-bold">Our Barbers</h1>
 
-  <div class="text-white">
-    <h1>Our Barbers</h1>
-    <p class="text-secondary">
-      Meet the master barbers every perfect cut at BarberKraft.
+    <p class="sub-text">
+      Meet the master barbers delivering perfect cuts at BarberKraft.
     </p>
 
     <nav>
       <ol class="breadcrumb justify-content-center mb-0">
-        <li style="color:gray;">Home /</li>
+        <li class="text-secondary me-2">Home /</li>
         <li class="breadcrumb-item">
-          <a href="#" class="text-white text-decoration-none">Barber</a>
+          <a href="#" class="text-white text-decoration-none">Barbers</a>
         </li>
       </ol>
     </nav>
   </div>
-</div>
-
-<!-- Main Section -->
-<div style="background-color:rgb(119,104,104); width:100%;">
-
-  <!-- Crew Section -->
-  <div class="container text-center pt-4">
-    <div class="d-inline-block px-4 py-2"
-         style="background-color:#836f34; color:yellow; border-radius:50px; font-weight:600;">
-      The Crew
-    </div>
-
-    <h5 style="color:aqua;">Skilled Hands, Sharp Results</h5>
-
-    <p style="color:aqua;">
-      Each of our barbers brings a unique specialty and years of experience to the chair. Find <br>
-                                   the right barber for your style.
-    </p>
-  </div>
-
-  <!-- Cards -->
-  <div class="container py-5">
-    <div class="row g-4">
-
-      <!-- Card 1 -->
-      <div class="col-md-6">
-        <div class="card bg-dark text-white border-0 h-100">
-          <div class="row g-0 align-items-stretch">
-
-            <div class="col-md-5 img-hover">
-              <img src="https://randomuser.me/api/portraits/men/45.jpg"
-                   class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-
-            <div class="col-md-7 p-3 d-flex flex-column">
-
-              <div>
-                <h5 class="fw-bold mb-0">Marcus Johnson</h5>
-                <p class="text-warning small mb-1">Master Barber & Owner</p>
-
-                <p class="small">
-                  Marcus founded BarberKraft with a vision to create a neighborhood barbershop.
-                </p>
-
-                <span class="badge bg-warning text-dark">Skin Fades</span>
-                <span class="badge bg-warning text-dark">Afro Textures</span>
-                <span class="badge bg-warning text-dark">Beard Sculpting</span>
-
-                <p class="mt-2 small">15+ years experience</p>
-              </div>
-
-              <div class="mt-auto text-end">
-                <i class="bi bi-instagram text-warning"></i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6">
-        <div class="card bg-dark text-white border-0 h-100">
-          <div class="row g-0 align-items-stretch">
-
-            <div class="col-md-5 img-hover">
-              <img src="https://randomuser.me/api/portraits/men/67.jpg"
-                   class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-
-            <div class="col-md-7 p-3 d-flex flex-column">
-
-              <div>
-                <h5 class="fw-bold mb-0">Jake Rivera</h5>
-                <p class="text-warning small mb-1">Senior Barber</p>
-
-                <p class="small">
-                  Trained in traditional barbering in San Juan.
-                </p>
-
-                <span class="badge bg-warning text-dark">Classic Cuts</span>
-                <span class="badge bg-warning text-dark">Hot Towel Shaves</span>
-                <span class="badge bg-warning text-dark">Hair Design</span>
-
-                <p class="mt-2 small">10+ years experience</p>
-              </div>
-
-              <div class="mt-auto text-end">
-                <i class="bi bi-instagram text-warning"></i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6">
-        <div class="card bg-dark text-white border-0 h-100">
-          <div class="row g-0 align-items-stretch">
-
-            <div class="col-md-5 img-hover">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                   class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-
-            <div class="col-md-7 p-3 d-flex flex-column">
-
-              <div>
-                <h5 class="fw-bold mb-0">Tony Chen</h5>
-                <p class="text-warning small mb-1">Style Specialist</p>
-
-                <p class="small">
-                  Tony keeps BarberKraft on trend with flawless results.
-                </p>
-
-                <span class="badge bg-warning text-dark">Modern Styles</span>
-                <span class="badge bg-warning text-dark">Color Work</span>
-                <span class="badge bg-warning text-dark">Asian Hair</span>
-
-                <p class="mt-2 small">8+ years experience</p>
-              </div>
-
-              <div class="mt-auto text-end">
-                <i class="bi bi-instagram text-warning"></i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-6">
-        <div class="card bg-dark text-white border-0 h-100">
-          <div class="row g-0 align-items-stretch">
-
-            <div class="col-md-5 img-hover">
-              <img src="https://randomuser.me/api/portraits/men/12.jpg"
-                   class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-
-            <div class="col-md-7 p-3 d-flex flex-column">
-
-              <div>
-                <h5 class="fw-bold mb-0">Devon Mitchell</h5>
-                <p class="text-warning small mb-1">Junior Barber</p>
-
-                <p class="small">
-                  Devon brings fresh energy and natural talent.
-                </p>
-
-                <span class="badge bg-warning text-dark">Kids Cuts</span>
-                <span class="badge bg-warning text-dark">Buzz Cuts</span>
-                <span class="badge bg-warning text-dark">Line Ups</span>
-
-                <p class="mt-2 small">3+ years experience</p>
-              </div>
-
-              <div class="mt-auto text-end">
-                <i class="bi bi-instagram text-warning"></i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Bottom Section -->
-  <div class="container text-center py-5">
-    <h1 class="text-white">Find Your Barber</h1>
-    <p  style="color:aqua;">
-      Book with any of our barbers online. Not sure who to choose?
-    </p>
-
-    <a href="#" class="btn btn-warning fw-bold">Book Now</a>
-  </div>
-<!-- Columns -->
-  <div class="row gy-4">
-
-    <!-- Column 1 -->
-    <div class="col-md-3">
-      <h5 class="mb-3">
-        <i class="fa-solid fa-scissors me-2"></i>
-        Barber <span class="text-warning">Kraft</span>
-      </h5>
-
-      <p style="color:aqua;">
-        Premium grooming for the modern gentleman. Expert barbers,
-        classic techniques, and a barbershop experience you'll look forward to every time.
-      </p>
-      
-      <div class="d-flex gap-2 mt-3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-<div class="d-flex gap-2">
-
-  <!-- Facebook -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-facebook"></i>
-  </div>
-
-  <!-- Instagram -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-instagram"></i>
-  </div>
-
-  <!-- X (Twitter) -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-twitter-x"></i>
-  </div>
 
 </div>
+
+
+
+
+<div class="container py-5">
+  <div class="row g-4 justify-content-center">
+
+    <!-- CARD -->
+    <div class="col-lg-5">
+      <div class="barber-card">
+
+        <div class="row g-0">
+
+          <!-- IMAGE -->
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="barber-img">
+          </div>
+
+          <!-- CONTENT -->
+          <div class="col-md-8 p-3 position-relative">
+
+            <h6 class="name">Marcus Johnson</h6>
+            <p class="role">Master Barber & Owner</p>
+
+            <p class="desc">
+              Marcus founded BarberKraft with a vision to create a neighborhood barbershop that combines old-school techniques with modern precision.
+            </p>
+
+            <div class="tags">
+              <span>Skin Fades</span>
+              <span>Afro Textures</span>
+              <span>Beard Sculpting</span>
+            </div>
+
+            <small class="exp">15+ years experience</small>
+
+            <!-- ICON -->
+            <i class="bi bi-instagram insta-icon"></i>
+
+          </div>
+
+        </div>
+
       </div>
     </div>
 
-    <!-- Column 2 -->
-    <div class="col-md-2">
-      <h6 class="fw-bold mb-3">SERVICES</h6>
-      <p style="color:aqua;">Classic Haircut</p>
-      <p style="color:aqua;">Skin Fade</p>
-      <p style="color:aqua;">Beard Trim</p>
-      <p style="color:aqua;">Hot Towel Shave</p>
+    <!-- CARD -->
+    <div class="col-lg-5">
+      <div class="barber-card">
+
+        <div class="row g-0">
+
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="barber-img">
+          </div>
+
+          <div class="col-md-8 p-3 position-relative">
+
+            <h6 class="name">Jake Rivera</h6>
+            <p class="role">Senior Barber</p>
+
+            <p class="desc">
+              Trained in traditional barbering in San Juan, Jake brings an artistic eye and steady hand to every cut.
+            </p>
+
+            <div class="tags">
+              <span>Classic Cuts</span>
+              <span>Hot Towel Shaves</span>
+              <span>Hair Design</span>
+            </div>
+
+            <small class="exp">10+ years experience</small>
+
+            <i class="bi bi-instagram insta-icon"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- CARD -->
+    <div class="col-lg-5">
+      <div class="barber-card">
+
+        <div class="row g-0">
+
+          <!-- IMAGE -->
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="barber-img">
+          </div>
+
+          <!-- CONTENT -->
+          <div class="col-md-8 p-3 position-relative">
+
+            <h6 class="name">Marcus Johnson</h6>
+            <p class="role">Master Barber & Owner</p>
+
+            <p class="desc">
+              Marcus founded BarberKraft with a vision to create a neighborhood barbershop that combines old-school techniques with modern precision.
+            </p>
+
+            <div class="tags">
+              <span>Skin Fades</span>
+              <span>Afro Textures</span>
+              <span>Beard Sculpting</span>
+            </div>
+
+            <small class="exp">15+ years experience</small>
+
+            <!-- ICON -->
+            <i class="bi bi-instagram insta-icon"></i>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
-    <!-- Column 3 -->
-    <div class="col-md-2">
-      <h6 class="fw-bold mb-3">INFO</h6>
-      <p style="color:aqua;">About Us</p>
-      <p style="color:aqua;">Our Barbers</p>
-      <p style="color:aqua;">Gallery</p>
-      <p style="color:aqua;">Blog</p>
+    <!-- CARD -->
+    <div class="col-lg-5">
+      <div class="barber-card">
+
+        <div class="row g-0">
+
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="barber-img">
+          </div>
+
+          <div class="col-md-8 p-3 position-relative">
+
+            <h6 class="name">Jake Rivera</h6>
+            <p class="role">Senior Barber</p>
+
+            <p class="desc">
+              Trained in traditional barbering in San Juan, Jake brings an artistic eye and steady hand to every cut.
+            </p>
+
+            <div class="tags">
+              <span>Classic Cuts</span>
+              <span>Hot Towel Shaves</span>
+              <span>Hair Design</span>
+            </div>
+
+            <small class="exp">10+ years experience</small>
+
+            <i class="bi bi-instagram insta-icon"></i>
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Column 4 -->
-    <div class="col-md-2">
-      <h6 class="fw-bold mb-3">SHOP</h6>
-      <p style="color:aqua;">Pricing</p>
-      <p style="color:aqua;">Book Now</p>
-      <p style="color:aqua;">Contact</p>
-      <p style="color:aqua;">FAQ</p>
-    </div>
 
-    <!-- Column 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-<div class="col-md-3">
-  <h6 class="fw-bold mb-3">CONTACT US</h6>
-
-  <p style="color:aqua;">
-    <i class="bi bi-geo-alt-fill me-2 text-warning"></i>
-    123 Main Street <br>    
-         Brooklyn, NY 11201
+<div class="text-center py-5">
+  <h4 class="text-white">Find Your Barber</h4>
+  <p class="text-secondary">
+    Book with any of our barbers online. We'll match you with the right barber.
   </p>
 
-  <p style="color:aqua;">
-    <i class="bi bi-telephone-fill me-2 text-warning"></i>
-    (555) 741-2580
-  </p>
-
-  <p style="color:aqua;">
-    <i class="bi bi-envelope-fill me-2 text-warning"></i>
-    hello@barberkraft.com
-  </p>
+  <button class="btn book-btn">Book Now</button>
 </div>
+
+
+<!-- FOOTER -->
+<footer class="footer-section pt-5 pb-3 text-light">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- LOGO + TEXT -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">✂️ Barber <span class="text-warning">Kraft</span></h5>
+        <p class="text-secondary small">
+          Premium grooming for the modern gentleman. Expert barbers, classic techniques.
+        </p>
+
+        <div class="d-flex gap-2 mt-3">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-md-2 mb-4">
+        <h6>Services</h6>
+        <ul class="list-unstyled text-secondary small">
+          <li>Classic Haircut</li>
+          <li>Skin Fade</li>
+          <li>Beard Trim</li>
+          <li>Hot Towel Shave</li>
+        </ul>
+      </div>
+
+      <!-- INFO -->
+      <div class="col-md-2 mb-4">
+        <h6>Info</h6>
+        <ul class="list-unstyled text-secondary small">
+          <li>About Us</li>
+          <li>Our Barbers</li>
+          <li>Gallery</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+
+      <!-- SHOP -->
+      <div class="col-md-2 mb-4">
+        <h6>Shop</h6>
+        <ul class="list-unstyled text-secondary small">
+          <li>Pricing</li>
+          <li>Book Now</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-3 mb-4">
+        <h6>Contact Us</h6>
+        <ul class="list-unstyled text-secondary small">
+          <li>📍 123 Main Street</li>
+          <li>📞 (555) 741-2580</li>
+          <li>✉️ hello@barberkraft.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="border-top pt-3 mt-3 d-flex justify-content-between flex-wrap small text-secondary">
+      <p>© 2026 BarberKraft. All rights reserved.</p>
+      <div>
+        <span class="me-3">Privacy Policy</span>
+        <span class="me-3">Terms of Service</span>
+        <span>Style Guide</span>
+      </div>
+    </div>
 
   </div>
+</footer>
 
-</div>
-</div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
