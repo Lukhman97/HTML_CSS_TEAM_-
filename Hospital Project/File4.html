@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./Assets/index.css">
+  <link rel="stylesheet" href="./CSS/index.css">
 
 </head>
 
-<body>
+<body >
 
 <!-- TOP HEADER -->
-<div class="top-header text-light border-bottom">
+<div class="top-header text-light  ">
   <div class="container d-flex justify-content-between align-items-center">
 
     <!-- Left -->
@@ -45,6 +45,53 @@
 
   </div>
 </div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+  <div class="container-fluid nav-space">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <span style="font-size:20px;">✂️</span>
+      <span class="fw-bold text-light">Barber</span>
+      <span class="fw-bold text-warning">Kraft</span>
+    </a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="nav">
+
+      <!-- Center Menu -->
+      <ul class="navbar-nav mx-auto text-center gap-lg-3">
+
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Barbers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+      </ul>
+
+      <!-- Right Side -->
+      <div class="d-flex align-items-center gap-3">
+
+        <!-- Small Icon -->
+        <i class="fas fa-sun text-light"></i>
+
+        <!-- Button -->
+        <a href="#" class="btn book-btn">Book Now</a>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+
 
 
 <!-- Bootstrap JS -->
