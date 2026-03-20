@@ -1,0 +1,116 @@
+/* ================= GLOBAL ================= */
+body {
+  background: #020617;
+  color: white;
+  padding-top: 120px;
+}
+
+/* TEXT */
+.sub-text {
+  color: #94a3b8;
+}
+
+/* ================= HEADER ================= */
+.top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 6px 0;
+  background-color: #1a1a1a;
+}
+
+.top-header i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.top-header i:hover {
+  color: #ffc107;
+}
+
+/* ================= NAVBAR ================= */
+.custom-nav {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 9998;
+  background: linear-gradient(to right, #020617, #0f172a);
+  padding: 14px 0;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* BUTTON */
+.book-btn {
+  background: #f59e0b;
+  color: black;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+.book-btn:hover {
+  background: #d97706;
+  color: white;
+}
+
+/* ================= HERO ================= */
+.hero-section {
+  height: 300px;
+  background: linear-gradient(to right, #020617, #1e293b);
+}
+
+/* ================= FORM ================= */
+.custom-input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: #64748b;
+}
+
+/* ================= CONTACT ================= */
+.contact-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-box i {
+  background: #f59e0b;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #0f172a;
+}
+
+.footer p {
+  color: #94a3b8;
+}
+
+/* ================= NAV SPACING ================= */
+.nav-space {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+@media (max-width: 768px) {
+  .nav-space {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
