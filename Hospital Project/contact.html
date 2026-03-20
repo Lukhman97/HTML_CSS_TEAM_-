@@ -9,6 +9,62 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
+  .hero-section {
+  height: 300px;
+  background: linear-gradient(to right, #020617, #1e293b);
+  color: white;
+}
+
+.main-section {
+  background: #020617;
+}
+
+.sub-text {
+  color: #94a3b8;
+}
+
+.custom-input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: #64748b;
+}
+
+.book-btn {
+  background: orange;
+  color: black;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background: #d97706;
+  color: white;
+}
+
+.contact-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-box i {
+  background: orange;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.footer {
+  background: #0f172a;
+  color: white;
+}
+
+.footer p {
+  color: #94a3b8;
+}
   /* TOP HEADER */
 .top-header {
   padding: 6px 0;
@@ -156,229 +212,162 @@
 
 
 
-<div class="d-flex justify-content-center align-items-center text-center"
-     style="height:300px; width:100%; background-color:darkslategray;">
-
-  <div class="text-white">
+<!-- HERO -->
+<div class="d-flex justify-content-center align-items-center text-center hero-section">
+  <div>
     <h1>Contact Us</h1>
-    <p class="text-secondary">
-     Questions, bookings, or just want to say what's up? We're here for you.
+    <p class="sub-text">
+      Questions, bookings, or just want to say what's up? We're here for you.
     </p>
 
-    <nav>
-      <ol class="breadcrumb justify-content-center mb-0">
-        <li style="color:gray;">Home /</li>
-        <li class="breadcrumb-item">
-          <a href="#" class="text-white text-decoration-none">Barber</a>
-        </li>
-      </ol>
-    </nav>
+    <ol class="breadcrumb justify-content-center mb-0">
+      <li class="text-secondary">Home /</li>
+      <li class="breadcrumb-item">
+        <a href="#" class="text-white text-decoration-none">Contact</a>
+      </li>
+    </ol>
+  </div>
+</div>
 
+<!-- MAIN -->
+<div class="main-section">
+  <div class="container py-5">
+    <div class="row g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-7">
+        <h3>Send Us a Message</h3>
+        <p class="sub-text">
+          Drop us a line and we'll get back to you within 24 hours.
+        </p>
+
+        <form>
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label>Full Name</label>
+              <input type="text" class="form-control custom-input" placeholder="John Doe">
+            </div>
+
+            <div class="col-md-6">
+              <label>Email</label>
+              <input type="email" class="form-control custom-input" placeholder="john@example.com">
+            </div>
+
+            <div class="col-12">
+              <label>Subject</label>
+              <input type="text" class="form-control custom-input" placeholder="Booking inquiry...">
+            </div>
+
+            <div class="col-12">
+              <label>Message</label>
+              <textarea class="form-control custom-input" rows="5"></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="btn book-btn px-4">
+                Send Message →
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-5">
+        <h3>Visit the Shop</h3>
+        <p class="sub-text">
+          Walk-ins welcome. Located in the heart of Brooklyn.
+        </p>
+
+        <div class="contact-box">
+          <i class="bi bi-envelope-fill"></i>
+          <div>
+            <h6>Email</h6>
+            <small>hello@barberkraft.com</small>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <i class="bi bi-telephone-fill"></i>
+          <div>
+            <h6>Phone</h6>
+            <small>(555) 741-2580</small>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <h6>Address</h6>
+            <small>123 Main Street, Brooklyn, NY</small>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <i class="bi bi-clock-fill"></i>
+          <div>
+            <h6>Business Hours</h6>
+            <small>
+              Tue-Fri: 9AM - 7PM<br>
+              Sat: 8AM - 6PM<br>
+              Sun: 10AM - 4PM
+            </small>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-</div>
-  <div style="height: 1800px;  width:100%; background-color: rgb(23, 26, 31);">
-    <div class="container py-5">
-  <div class="row g-5">
-
-    <!-- LEFT SIDE -->
-    <div class="col-lg-7">
-      <h3 style="color: white;">Send Us a Message</h3>
-      <p style="color:rgb(124, 116, 116)">
-        Drop us a line and we'll get back to you within 24 hours.
-      </p>
-
-      <form>
-        <div class="row g-3" >
-
-          <div class="col-md-6">
-            <label style="color:white">Full Name</label>
-            <input type="text" class="form-control bg-secondary text-light border-0" placeholder="John Doe">
-            <div class="text-danger small mt-1">This field is required</div>
-          </div>
-          <div class="col-md-6" style="color: white;">
-            <label >Email</label>
-            <input type="email" class="form-control bg-secondary text-light border-0" placeholder="john@example.com">
-          </div>
-
-          <div class="col-12">
-            <label style="color:white">Subject</label>
-            <input type="text" class="form-control bg-secondary text-light border-0" placeholder="Booking inquiry, group event, feedback...">
-          </div>
-
-          <div class="col-12">
-            <label style="color:white">Message</label>
-            <textarea class="form-control bg-secondary text-light border-0" rows="5"></textarea>
-          </div>
-
-          <div class="col-12">
-            <button  class="btn btn-warning fw-semibold px-4">
-              Send Message->
-            </button>
-          </div>
-
-        </div>
-      </form>
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="col-lg-5">
-      <h3 style="color:white">Visit the Shop</h3>
-      <p class="text-secondary">
-        Walk-ins welcome. Located in the heart of Brooklyn.
-      </p>
-
-      <div class="d-flex mb-4">
-        <div class="bg-warning text-dark p-3 rounded me-3">
-          <i class="bi bi-envelope-fill"></i>
-        </div>
-        <div>
-          <h6 style="color:white">Email</h6>
-          <small class="text-secondary">hello@barberkraft.com</small>
-        </div>
-      </div>
-
-      <div class="d-flex mb-4">
-        <div class="bg-warning text-dark p-3 rounded me-3">
-          <i class="bi bi-telephone-fill"></i>
-        </div>
-        <div>
-          <h6 style="color:white">Phone</h6>
-          <small class="text-secondary">(555) 741-2580</small>
-        </div>
-      </div>
-
-      <div class="d-flex mb-4">
-        <div class="bg-warning text-dark p-3 rounded me-3">
-          <i class="bi bi-geo-alt-fill"></i>
-        </div>
-        <div>
-          <h6 style="color:white">Address</h6>
-          <small class="text-secondary">
-            123 Main Street, Brooklyn, NY 11201
-          </small>
-        </div>
-      </div>
-
-      <div class="d-flex">
-        <div class="bg-warning text-dark p-3 rounded me-3">
-          <i class="bi bi-clock-fill"></i>
-        </div>
-        <div style="height: 50px;">
-          <h6 style="color:white">Business Hours</h6>
-          <small class="text-secondary" style="height: 100px;">
-            Mon: Closed<br>
-            Tue - Fri: 9:00 AM - 7:00 PM<br>
-            Sat: 8:00 AM - 6:00 PM<br>
-            Sun: 10:00 AM - 4:00 PM
-          </small>
-        </div>
-      </div>
-    </div>
-    <div style="height:500px ;width: 100%" >
-  <div style="width:100%">
+  <!-- MAP -->
   <iframe 
     src="https://www.google.com/maps?q=New+York&output=embed"
-    width="100%" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
+    width="100%" height="400" style="border:0;">
   </iframe>
-</div>
-</div>
-  <div>
 
-  </div>
-<div class="col-md-3">
-      <h5 class="mb-3">
-        <i  style="color: white;"></i>
-        Barber <span class="text-warning">Kraft</span>
-      </h5>
+  <!-- FOOTER -->
+  <div class="footer py-5">
+    <div class="container">
+      <div class="row">
 
-      <p style="color:aqua;">
-        Premium grooming for the modern gentleman. Expert barbers,
-        classic techniques, and a barbershop experience you'll look forward to every time.
-      </p>
-      
-      <div class="d-flex gap-2 mt-3">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <div class="col-md-3">
+          <h5>✂️ Barber <span class="text-warning">Kraft</span></h5>
+          <p class="sub-text">
+            Premium grooming for the modern gentleman.
+          </p>
+        </div>
 
-<div class="d-flex gap-2">
+        <div class="col-md-2">
+          <h6>Services</h6>
+          <p>Haircut</p>
+          <p>Fade</p>
+        </div>
 
-  <!-- Facebook -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-facebook"></i>
-  </div>
+        <div class="col-md-2">
+          <h6>Info</h6>
+          <p>About</p>
+          <p>Blog</p>
+        </div>
 
-  <!-- Instagram -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-instagram"></i>
-  </div>
+        <div class="col-md-2">
+          <h6>Shop</h6>
+          <p>Pricing</p>
+          <p>Contact</p>
+        </div>
 
-  <!-- X (Twitter) -->
-  <div class="border rounded p-2 text-center">
-    <i class="bi bi-twitter-x"></i>
-  </div>
+        <div class="col-md-3">
+          <h6>Contact</h6>
+          <p>📍 NY Street</p>
+          <p>📞 123456789</p>
+        </div>
 
-</div>
       </div>
     </div>
-
-    <!-- Column 2 -->
-    <div class="col-md-2">
-      <h6 style="color:white">SERVICES</h6>
-      <p style="color:aqua;">Classic Haircut</p>
-      <p style="color:aqua;">Skin Fade</p>
-      <p style="color:aqua;">Beard Trim</p>
-      <p style="color:aqua;">Hot Towel Shave</p>
-    </div>
-
-    <!-- Column 3 -->
-    <div class="col-md-2">
-      <h6 style="color:white">INFO</h6>
-      <p style="color:aqua;">About Us</p>
-      <p style="color:aqua;">Our Barbers</p>
-      <p style="color:aqua;">Gallery</p>
-      <p style="color:aqua;">Blog</p>
-    </div>
-
-    <!-- Column 4 -->
-    <div class="col-md-2">
-      <h6 style="color:white">SHOP</h6>
-      <p style="color:aqua;">Pricing</p>
-      <p style="color:aqua;">Book Now</p>
-      <p style="color:aqua;">Contact</p>
-      <p style="color:aqua;">FAQ</p>
-    </div>
-
-    <!-- Column 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-<div class="col-md-3">
-  <h6 style="color:white">CONTACT US</h6>
-
-  <p style="color:aqua;">
-    <i class="bi bi-geo-alt-fill me-2 text-warning"></i>
-    123 Main Street <br>    
-         Brooklyn, NY 11201
-  </p>
-
-  <p style="color:aqua;">
-    <i class="bi bi-telephone-fill me-2 text-warning"></i>
-    (555) 741-2580
-  </p>
-
-  <p style="color:aqua;">
-    <i class="bi bi-envelope-fill me-2 text-warning"></i>
-    hello@barberkraft.com
-  </p>
-</div>
-
   </div>
 
 </div>
-  </div>
   </body>
   </html>
   
